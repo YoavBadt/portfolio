@@ -8,8 +8,8 @@ body{
     background-color: #F1F0ED;
     color: #8A837C;
     font-family: "Geist Mono";
-    font-size: 16px;
-    line-height: 2.083vw;
+    font-size: 14px;
+    line-height: 20px;
 }
 *,
 *::before,
@@ -22,9 +22,10 @@ body{
 a{
   text-decoration: none;
   /* color:rgb(70, 70, 70); */
-  
+  color:inherit;
   transition: 0.4s;
 }
+
 
 .boxer{
     background-size: 4vw 20px;
@@ -33,9 +34,9 @@ a{
     linear-gradient(to top, rgba(204, 204, 204,1) 1px, transparent 1px);
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: #8A837C;
+h1,h2,h3,h4,h5,h6,p{
     font-family: "Geist Mono";
+    color:#675c51;
     /* line-height: 2.083vw; */
     text-transform: capitalize;
     /* border:1px solid red; */
@@ -44,7 +45,7 @@ h1,h2,h3,h4,h5,h6{
 }
 h2{
     font-size:18px;
-    line-height:40px;
+    line-height:20px;
     font-weight: 700;
     /* color:black; */
 }
@@ -55,8 +56,13 @@ h3{
 }
 p{
     font-family: "Geist Mono";
-    font-size: 16px;
-    line-height:24px;
+    
     margin:0;
     padding:0;
 }
+
+img{
+    border:none;
+    display: block;
+}
+

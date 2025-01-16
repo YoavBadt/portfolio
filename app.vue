@@ -1,6 +1,7 @@
 <template>
-  
+    <!-- <Mygrid/> -->
     <NuxtLayout>
+      
       <NuxtPage />
     </NuxtLayout>
   
