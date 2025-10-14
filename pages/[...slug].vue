@@ -76,11 +76,16 @@ export default {
         margin-bottom:20px;
     }
     .main_2_img_box{
-        width:calc(50% - 20px);
+        flex-grow: 0;
+        width:calc(33% - 40px);
+        max-height: 90vh;
         /* height:100%; */
         overflow: hidden;
         /* background:Red; */
         /* margin-bottom:40px; */
+    }
+    .main_2_img_box:nth-child(3n){
+        margin-right:-40px;
     }
     .main_2_img{
         width:100%;
@@ -89,7 +94,7 @@ export default {
         object-position: 50% 0%;
         border-radius: 5px;
         overflow: hidden;
-        border:1px dotted #8A837C;
+        /* border:1px dotted #8A837C; */
         /* width:100%; */
 
     }

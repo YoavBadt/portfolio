@@ -10,6 +10,7 @@ images :
     # - /projects/art-1/2.jpg
     - /projects/art-1/14.jpg
     - /projects/art-1/budh.jpg
+    - /projects/art-1/2.jpg    
     - /projects/art-1/ganesh.jpg
     - /projects/art-1/snake.jpg
     - /projects/art-1/ocean.jpg
