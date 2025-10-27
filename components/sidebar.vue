@@ -5,8 +5,8 @@
             <RouterLink to="/">
                 
                 <!-- <span>www.<br/></span> -->
-                <h1 :style="{marginLeft:'-5px'}">Yoav</h1>
-                <h1>Badt</h1>
+                <h1 ><span :style="{marginLeft:'-5px'}">Yoav</span><br>Badt</h1>
+                <!-- <h1>Badt</h1> -->
                 
                 
                 <h2 >Portfolio</h2>
@@ -35,24 +35,39 @@ export default {
 </script>
 <style >
     .side_head{
-        padding:40px;
+        container-type: inline-size;
         /* padding-top:40px; */
         /* padding-left:40px; */
         border-bottom:1px dotted #8A837C;
         /* height: 220px; */
-        container-type: inline-size;
+        color:#675c51;
+    }
+    .side_head:hover{
+        background : #11a8ff;
+        color: #F1F0ED;
+    }
+    .side_head h1,.side_head h2{
+        color: inherit ;
+    }
+    .side_head a{
+        transition: 0s;
+        padding:40px;
+        display: inline-block;
     }
     .side_head h1{
         /* font-family: 'Geist'; */
         /* font-size:1.75vw; */
-        font-size: 25cqw;
+        font-size: 16cqw;
         line-height:40px;
         font-weight: 600;
         letter-spacing: 1px;
         text-transform: none;
     }
+    .side_head h1 span{
+        font-weight:inherit;
+    }
     .side_head h2{
-        font-size: 13cqw;
+        font-size: 10cqw;
         line-height:40px;
         font-weight: 300;
         /* color:#A8A29A; */
@@ -73,6 +88,6 @@ export default {
     }
     
     nav a.router-link-active {
-        color: #E44B2B;
+        color: #11a8ff;
     }
 </style>

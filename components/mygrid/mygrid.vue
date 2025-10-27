@@ -23,12 +23,12 @@ import MygridUi from './mygridUi.vue'
 export default {
     data(){
         return {
-            col: 5,
+            col: 6,
             colWidth: null,
             colgap:0,
             colgut:0,
             colPos : [],
-            colPad :80,
+            colPad :40,
             row : 4,
             base : 20,
             mygridheight : null,
@@ -69,7 +69,7 @@ export default {
 <style >
     .mygrid{
         position:absolute;
-        z-index:10;
+        z-index:-10;
         top:0;
         left:0;
         right:0;
@@ -83,7 +83,7 @@ export default {
         height:100%;
     }
     .baseline{
-        border-bottom:1px dotted rgba(0,0,255,0.5);
+        border-bottom:1px dotted rgba(0,0,0 ,0.5);
         width : 100%
     }
     .col{

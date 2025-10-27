@@ -1,6 +1,6 @@
 <template >
     <main class="">
-        <!-- <Mygrid /> -->
+        
         <ContentDoc v-slot="{ doc }">
             <div class="main_1 ">
                 <div class="label">project name:</div>
@@ -22,7 +22,8 @@
                 <template v-if="doc.images">
 
                     <div class="main_2_img_box" v-for="image in doc.images">
-                        <img class="main_2_img" :src="image"/>
+                        <!-- <img class="main_2_img" :src="image"/> -->
+                        <NuxtImg class="main_2_img" :src="image" preload />
                     </div>
                 </template>
 
@@ -32,20 +33,20 @@
    </main>
 </template>
 <script>
-import Mygrid from './components/mygrid/mygrid.vue'
-export default {
-    data(){
-        return{
-            iframeOK : false
-        }
-    },
-    methods:{
-        iframeLoaded(){
-            this.iframeOK = true;
-        
+    import Mygrid from './components/mygrid/mygrid.vue'
+    export default {
+        data(){
+            return{
+                iframeOK : false
+            }
+        },
+        methods:{
+            iframeLoaded(){
+                this.iframeOK = true;
+            
+            }
         }
     }
-}
 </script>
 <style >
     .label{
@@ -70,8 +71,9 @@ export default {
         margin-bottom:20px;
     }
     .main_1_p p a{
-        color: #E44B2B;
-        border-bottom:1px solid #E44B2B;
+        /* color: #E44B2B; */
+        color:#11a8ff;
+        /* border-bottom:1px solid #11a8ff; */
         font-weight: 400;
         margin-bottom:20px;
     }
