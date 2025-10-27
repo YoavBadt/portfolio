@@ -43,7 +43,7 @@ export default {
         color:#675c51;
     }
     .side_head:hover{
-        background : #11a8ff;
+        background : #675c51;
         color: #F1F0ED;
     }
     .side_head h1,.side_head h2{

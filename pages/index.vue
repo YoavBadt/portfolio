@@ -2,20 +2,25 @@
    <main class="indexMainBox">
       <!-- <Mygrid /> -->
       <div class="indexGalleryItem" :style="{gridColumn: '1/span 2',gridRow: '1/span 2',}">
-         <NuxtImg class="indexImg_h" src="barong.jpg" preload />
+         <NuxtImg class="indexImg" :style="{height:'100%'}" src="barong.jpg" preload />
       </div>
-      <div class="indexGalleryItem" :style="{gridColumn: '5/span 2',gridRow: '3/span 2',}">
-         <NuxtImg class="indexImg_h" src="blue2.jpg" preload />
+      <div class="indexGalleryItem" :style="{gridColumn: '2/span 2',gridRow: '3/span 2',}">
+         <NuxtImg class="indexImg" :style="{width:'100%'}" src="blue2.jpg" preload />
       </div>
-      <div class="indexGalleryItem" :style="{gridColumn: '5/span 2',gridRow: '1/span 2',}">
-         <NuxtImg class="indexImg_h" src="sanhedrin.png" preload />
+      
+      <div class="indexGalleryItem" :style="{gridColumn: '4/span 1',gridRow: '3/span 2',}">
+         <NuxtImg class="indexImg"  :style="{width:'100%'}" src="senhadrin.png" preload />
       </div>
-      <div class="indexGalleryItem" :style="{gridColumn: '3/span 2',gridRow: '1/span 2',}">
-         <NuxtImg class="indexImg_h" src="fsight1.png" preload />
+      <div class="indexGalleryItem" :style="{gridColumn: '1/span 1',gridRow: '3/span 1',}">
+         <NuxtImg class="indexImg" :style="{height:'100%'}" src="fsight1.png" preload />
       </div>
-        <div class="indexGalleryItem" :style="{gridColumn: '3/span 2',gridRow: '3/span 2',}">
-         <NuxtImg class="indexImg_w" src="radical1.png" preload />
+      
+      <div class="indexGalleryItem" :style="{gridColumn: '1/span 1',gridRow: '4/span 1',}">
+         <NuxtImg class="indexImg" :style="{height:'100%'}" src="synth1.png" preload />
       </div>
+        <!-- <div class="indexGalleryItem" :style="{gridColumn: '4/span 1',gridRow: '3/span 2',}">
+         <NuxtImg class="indexImg"    :style="{height:'100%'}" src="radical1.png" preload />
+      </div>  -->
 
       
       <div class="indexMain">
@@ -46,46 +51,44 @@ export default {
 <style>
       .indexGalleryItem{
          outline: 1px dotted lightgrey;
+         /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+         /* border-radius:3px; */
          overflow:hidden;
-         border-radius:3px;
          
          display: flex;
          align-items: center;
          justify-content: center;
          /* background:red; */
-         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
-     .indexImg_h{
-      
-        height:100%;
+     .indexImg{
+        /* filter: grayscale(100%) */
         /* object-fit : cover; */
      }
-     .indexImg_w{
-     
-      width:100%;
-      /* object-fit : fill; */
+     .indexImg:hover{
+        /* filter: grayscale(0%) */
      }
+     
 
      .indexMainBox{
          grid-template-columns: repeat(6,1fr);
          grid-template-rows: repeat(4,1fr);
-         gap:20px;
-         padding: 20px  
+         /* gap:20px; */
+         /* padding: 20px   */
      }
     .indexMain{
       outline: 1px dotted lightgrey;
-      border-radius:3px; 
+      /* border-radius:3px;  */
       padding:40px;
 
       /* font-size:24px;
       line-height:  */
       /* position:relative; */
       /* align-self: center; */
-      grid-column: 1/span 2;
-      grid-row: 3/span 2;
-      /* display: flex;
-      align-items: center;
-      justify-content: center; */
+      grid-column: 3/span 2;
+      grid-row: 1/span 2;
+      display: flex;
+      align-items: center; 
+      justify-content: center; 
     }
     .indexMain_wrap{
     }
