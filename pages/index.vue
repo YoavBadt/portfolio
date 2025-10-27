@@ -4,24 +4,28 @@
       <div class="indexGalleryItem" :style="{gridColumn: '1/span 2',gridRow: '1/span 2',}">
          <NuxtImg class="indexImg" :style="{height:'100%'}" src="barong.jpg" preload />
       </div>
-      <div class="indexGalleryItem" :style="{gridColumn: '2/span 2',gridRow: '3/span 2',}">
-         <NuxtImg class="indexImg" :style="{width:'100%'}" src="blue2.jpg" preload />
-      </div>
+      
       
       <div class="indexGalleryItem" :style="{gridColumn: '4/span 1',gridRow: '3/span 2',}">
-         <NuxtImg class="indexImg"  :style="{width:'100%'}" src="senhadrin.png" preload />
+         <NuxtImg class="indexImg"  :style="{height:'100%'}" src="alhadeff.png" preload />
       </div>
       <div class="indexGalleryItem" :style="{gridColumn: '1/span 1',gridRow: '3/span 1',}">
          <NuxtImg class="indexImg" :style="{height:'100%'}" src="fsight1.png" preload />
       </div>
       
-      <div class="indexGalleryItem" :style="{gridColumn: '1/span 1',gridRow: '4/span 1',}">
+      <div class="indexGalleryItem" :style="{gridColumn: '1/span 2',gridRow: '4/span 1',}">
          <NuxtImg class="indexImg" :style="{height:'100%'}" src="synth1.png" preload />
       </div>
-        <!-- <div class="indexGalleryItem" :style="{gridColumn: '4/span 1',gridRow: '3/span 2',}">
+        <div class="indexGalleryItem" :style="{gridColumn: '3/span 1',gridRow: '3/span 2',}">
          <NuxtImg class="indexImg"    :style="{height:'100%'}" src="radical1.png" preload />
-      </div>  -->
-
+      </div> 
+       <div class="indexGalleryItem" :style="{gridColumn: '5/span 2',gridRow: '1/span 4',}">
+         <NuxtImg class="indexImg"    :style="{width:'100%'}" src="blue5.png" preload />
+      </div> 
+      
+      <div class="indexGalleryItem" :style="{gridColumn: '5/span 1',gridRow: '1/span 1',}">
+         <NuxtImg class="indexImg" :style="{width:'100%'}" src="screenprint32.png" preload />
+      </div>
       
       <div class="indexMain">
          <ContentDoc v-slot="{ doc }">
@@ -51,6 +55,7 @@ export default {
 <style>
       .indexGalleryItem{
          outline: 1px dotted lightgrey;
+         background: #f1f0ed;
          /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
          /* border-radius:3px; */
          overflow:hidden;
