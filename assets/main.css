@@ -5,7 +5,7 @@
     display:grid;
     grid-template-columns: 232px 1fr 
     /* column-gap: 0; */
-
+    
 }
 .sidebar{
     height:100vh;
